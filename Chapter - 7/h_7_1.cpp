@@ -1,5 +1,4 @@
-/* Week 8 Lab Exercises Question 1:
-
+/* 
 (Find the index of the largest element) Write a function that 
 returns the index of the largest element in an array of numbers.
 If the largest element occurs more than once in the array,

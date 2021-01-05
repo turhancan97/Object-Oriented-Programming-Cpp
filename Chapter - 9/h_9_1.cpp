@@ -1,5 +1,4 @@
-/* Week 10 Lab Exercises Question 1:
-
+/*
 (Health application: the BMI class) Body Mass Index (BMI) is a measure of health that 
 is based on a person’s height and weight.Use object-oriented 
 programming to rewrite this procedural program. Design a class 

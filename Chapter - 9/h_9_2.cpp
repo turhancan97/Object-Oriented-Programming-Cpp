@@ -1,5 +1,4 @@
-/* Week 10 Lab Exercises Question 2:
-
+/*
 (Display non-prime numbers) Write a program that displays all 
 the non-prime numbers less than 100 in decreasing order. 
 Use the StackOfIntegers class to store the non-prime numbers 

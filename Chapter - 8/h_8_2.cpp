@@ -1,5 +1,4 @@
-/* Week 9 Lab Exercises Question 2:
-
+/*
 (Stopwatch) Design a class named StopWatch. The class contains:
 • Private data fields startTime and endTime with appropriate get functions.
 • A no-arg constructor that initialises startTime with the current time.

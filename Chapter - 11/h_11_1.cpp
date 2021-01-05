@@ -1,5 +1,4 @@
-/* Week 12 Lab Exercises Question 1:
-
+/*
 (The Triangle class) Design a class named Triangle that extends GeometricObject. The class contains the following:
 • Three double data fields named side1, side2, and side3 to denote the three sides of the triangle
 • A no-arg constructor that creates a default triangle with each side equal to 1.0

@@ -1,5 +1,4 @@
-/* Week 9 Lab Exercises Question 1:
-
+/*
 (The Fan class) Design a class named Fan to represent a fan. 
 The class contains:
 * An int data field named speed that specifies the speed of the fan.

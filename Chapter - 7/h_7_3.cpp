@@ -1,4 +1,4 @@
-/* Week 8 Lab Exercises Question 3:
+/*
 (Count the occurrence of the numbers) Write a program that 
 reads in at most 100 integers that are between 1 and 100 and 
 counts the occurrence of each number in the list.*/

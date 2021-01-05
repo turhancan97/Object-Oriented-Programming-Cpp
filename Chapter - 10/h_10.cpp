@@ -1,5 +1,4 @@
-/* Week 11 Lab Exercises Question 1:
-
+/*
 Design a class for modelling courses) Suppose you need to 
 process the information for a series of courses. Each course 
 has a name and a number of students who take the course. 

@@ -1,5 +1,4 @@
-/* Week 12 Lab Exercises Question 2:
-
+/*
 (The Person, Student, Employee and Faculty classes) Design a class named Person and its two derived classes named Student and Employee. Make Faculty a derived class of Employee. The classes have the following properties:
 • A Person has a name and e-mail address
 • A Student has a class status (first year, second year, final year)

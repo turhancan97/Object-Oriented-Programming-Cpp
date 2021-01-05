@@ -1,5 +1,4 @@
-/* Week 8 Lab Exercises Question 2:
-
+/*
 (Strictly identical arrays) Two arrays list1 and list2 are 
 strictly identical if they have the same length and list1[i] 
 is equal to list2[i] for each i. Write a function that 
