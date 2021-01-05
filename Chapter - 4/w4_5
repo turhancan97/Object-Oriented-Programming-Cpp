@@ -1,0 +1,58 @@
+/*(Monte Carlo simulation) A square is divided into four 
+smaller regions as shown below in (a). If you throw a dart 
+into the square 1,000,000 times what is the probability for 
+a dart to fall into an odd-numbered region? Write a program 
+to simulate the process and display the result.
+(Hint: place the centre of the square in the centre of a 
+coordinate system, as shown in (b), randomly generate a 
+point in the square and count the number of times for a 
+point to fall into an odd-numbered region).*/
+
+#include <iostream>
+#include <time.h>
+#include <math.h>
+using namespace std;
+double x,y;
+int fr=0,sr=0,tr=0,ffr=0;
+int main()
+{
+ srand (time(NULL));
+ int n;
+    cout<<"Running Monte-Carlo simulation to throw dart 1000000 times at box..."<<endl;
+
+for(n=0;n<=999999;n++)
+{
+
+     x =  ((rand()%10 )/4.5 ) -1;
+     y =  ((rand()%10 )/4.5 ) -1;
+
+     if (x<0) // first region
+     {
+         fr++;
+     }
+     else
+     {
+         if(y<0) // fourth region
+         {
+             ffr++;
+         }
+         else
+         {
+             if( ( pow(x,2) + (pow(y,2)) ) > 2 ) // second region
+             {
+                 sr++;
+             }
+             else
+             {
+                 tr++;
+             }
+
+         }
+     }
+
+
+}
+
+cout<<"Dart have hit odd regions "<<fr+tr<<" times"<<endl;
+cout<<"A hit rate of "<<(float)(fr+tr)/10000<<" percent"<<endl;
+}

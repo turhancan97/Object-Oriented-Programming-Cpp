@@ -1,0 +1,18 @@
+/*(Compute the volume of a cylinder) Write a program that reads in the radius and length
+of a cylinder and computes the area and volume using the formulas*/
+
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+float rad,len;
+int main()
+{
+
+    cout<<"Enter the radius and length of a cylinder:\n";
+    cin>>rad;
+    cin>>len;
+    cout<<"The area is "<<(float)(rad*rad*3.1415)<<"\n";
+    cout<<"The volume is "<<((float)(rad*rad*3.1415)*len);
+
+}

@@ -1,0 +1,17 @@
+/*(Convert an uppercase letter to lowercase) Write a program 
+that prompts the user to enter an uppercase letter and 
+converts it to a lowercase letter.*/
+
+#include <iostream>
+
+using namespace std;
+
+char in;
+
+int main()
+{
+    cout << "Enter an uppercase letter: ";
+    cin>>in;
+    cout<<"The lower-case letter is "<<char(int(in)+32);
+    return 0;
+}

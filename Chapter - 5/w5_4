@@ -1,0 +1,63 @@
+/*(Order three cities) Write a program that prompts the
+user to enter three cities, reads in the input and displays 
+them in alphabetical order.*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void print(vector<string> names){
+	printf("printing ........\n");
+	for(int i=0;i<names.size();i++)
+		cout<<names[i]<<endl;
+	printf("\n");
+}
+
+bool mycomp(string a, string b){
+
+	return a<b;
+}
+
+vector<string> alphabaticallySort(vector<string> a){
+	int n=a.size();
+
+	sort(a.begin(),a.end(),mycomp);
+	return a;
+}
+
+int main()
+{
+	int n=3;
+	cout<<"Enter three cities beginning with capital letters";
+
+
+	vector<string> names;
+	string name;
+	printf("enter names: \n");
+	//taking input
+	for(int i=0;i<n;i++){
+	    if(i==0)
+	    {
+	        cout<<"Enter the first city: ";
+	    }
+	    if(i==1)
+	    {
+	        cout<<"Enter the second city: ";
+	    }
+	    if(i==2)
+	    {
+	        cout<<"Enter the third city: ";
+	    }
+
+		cin>>name;
+
+		names.push_back(name);
+	}
+
+
+
+    cout<<"Three cities in alphabetical order are ";
+	names=alphabaticallySort(names);
+	print(names);
+
+	return 0;
+}

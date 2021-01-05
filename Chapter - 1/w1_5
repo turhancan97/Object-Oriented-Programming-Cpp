@@ -1,0 +1,14 @@
+/*(Area and perimeter of a square) Write a program that displays the area and perimeter
+of a square that has a side of 5.2*/
+
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+
+    cout<<"area = "<<5.2*5.2<<" and perimeter = "<<4*5.2;
+
+}

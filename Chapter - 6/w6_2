@@ -1,0 +1,42 @@
+/*(Estimate pi value)Write a function that returns 
+f(n) for a given n and write a test program*/
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+
+int n;float fn; float sum=0;
+
+
+
+void estimatepi(int n)
+{
+
+    sum = 0;
+    for(int i=1;i<=n;i++)
+    {
+        sum = sum + (1/(pow(i,2)));
+    }
+    fn =(float) pow(6*sum,0.5);
+}
+
+int main()
+{
+    cout<<"Enter the number of iteration: "<<endl;;
+    cin>>n;
+
+
+    cout<<"n \t f(n)"<<endl;
+
+    for(int j=2;j<=20;j++)
+    {
+        estimatepi(j);
+        cout<<j<<"\t"<<fn<<endl;
+    }
+
+
+
+
+    return 0;
+}

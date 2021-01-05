@@ -1,0 +1,39 @@
+/*(Science: wind chill temperature) How cold is it outside? The temperature alone is not
+enough to provide the answer. Other factors such as wind speed, humidity and and
+sunshine play important roles in determining the coldness outside. In 2001, the US
+National Weather Service (NWS) implemented the new wind-chill temperature to
+measure the coldness using temperature and wind speed.
+Write a program that prompts the user to enter a temperature between -58 F and 41
+F and a wind speed greater than or equal to 2 mph and displays the wind-chill
+temperature. Use pow(a , b) to compute v^0.16*/
+
+#include <iostream>
+#include <ctime>
+#include <math.h>
+
+using namespace std;
+float t_wc;
+float temp;
+float ta;
+float v;
+int main()
+{
+    HERE:
+    cout<<"Enter the temperature in Fahrenheit:"<<endl;
+    cin>>ta;
+    if ((ta<-58) || (ta>41))
+    {
+        cout<<"Please enter a valid temperature between [-58,41] Fahrenheit"<<endl;;
+        goto HERE;
+    }
+    cout<<"Enter the wind speed:"<<endl;
+    cin>>v;
+    if (v<2)
+    {
+        cout<<"This formula cannot be used for the speed below 2-mph"<<"Please enter a valid speed"<<endl;
+        goto HERE;
+    }
+
+    t_wc = (35.74) + (0.6215*ta) - (35.75*pow(v,0.16)) + (0.4275*ta*pow(v,0.16));
+    cout<<"The wind chill temperature is: "<<t_wc;
+}

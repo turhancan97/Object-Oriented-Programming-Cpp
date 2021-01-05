@@ -1,0 +1,19 @@
+/*(Display the ASCII character table) Write a program that 
+prints all the uppercase characters of the ASCII character 
+table. Display 5 characters per line. Separate the characters 
+by exactly one space.*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char x;
+    for(int i=65;i<=90;i++)
+    {   x = i;
+        cout<<x<<" ";
+        if((i-4)%5==0)
+        {
+            cout<<"\n";
+        }
+    }
+}

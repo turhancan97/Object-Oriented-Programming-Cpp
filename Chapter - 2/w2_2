@@ -1,0 +1,24 @@
+/*(Sum the digits of an integer) Write a program that reads in an integer between 0 and
+1000 and adds all the digits in the integer. For example, if an integer is 932, the sum
+of its digits is 9 + 3 + 2 = 14.*/
+
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+int num;
+int sum = 0;
+int divd;
+int main()
+{
+
+    cout<<"Enter a number between 0 and 1000\n";
+    cin>>num;
+while(num>0)
+{
+    divd=num%10;
+    sum=sum+divd;
+    num=num/10;
+}
+cout<<"The sum of the digits is = "<<sum;
+}

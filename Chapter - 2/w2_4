@@ -1,0 +1,30 @@
+/*(Health application: BMI) The Body Mass Index (BMI) is a measure of health on weight.
+It can be calculated by taking your weight in kilograms and dividing by the square of
+your height in metres. Write a program that prompts the user to enter a weight in
+pounds and height in inches and displays the BMI. Note that one pound is
+0.45359237 kilograms and one inch is 0.0254 metres.*/
+
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+int weight;
+int height;
+float BMI;
+float weightkg;
+float heightm;
+float tokg = 0.45359237;
+float tom = 2.54/100;
+int main()
+{
+    cout<<"Enter your weight in lb:\n";
+    cin>>weight;
+    cout<<"Enter your height in inches:\n";
+    cin>>height;
+    weightkg = (float) weight*tokg;
+    heightm = (float) height*tom;
+    BMI = weightkg/heightm/heightm;
+
+    cout<<"Your weight is "<<weightkg<<" and your height is "<<heightm<< "m"<<endl;
+    cout<<"Your BMI is "<<BMI<<endl;
+}

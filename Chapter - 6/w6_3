@@ -1,0 +1,39 @@
+/*(Search a character) Write a function that searches 
+for a particular character in a string using the following 
+header:
+	void search(string& s, char& key)
+Write a test program that prompts the user to enter 
+the string and a character and displays if the character 
+is found.*/
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+string str;
+char chr;
+int i;
+
+void search(string& s, char& key)
+{
+    int size = s.size();
+
+    for(i=0;i<size;i++)
+    {
+        if(s[i]==key)
+        {
+            cout<<"Found the character "<<key<<" at position "<<i<<endl;
+        }
+    }
+
+}
+int main()
+{
+    cout<<"Enter a string to search: "<<endl;
+    cin>>str;
+    cout<<"Enter the character to search: "<<endl;
+    cin>>chr;
+    search(str, chr);
+
+    return 0;
+}

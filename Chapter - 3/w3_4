@@ -1,0 +1,53 @@
+/*(Game: pick a card) Write a program that simulates picking 
+a card from a deck of 52 cards. Your program should display 
+the rank (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King) 
+and suit (Clubs, Diamonds, Spades, Hearts) of the card.*/
+
+#include <iostream>
+#include <ctime>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+string suit[4] ={"Clubs","Diamonds","Spades","Hearts"};
+string rank_nonNumber[4] = {"Ace","Jack","Queen","King"};
+int rank_number[9] = {2,3,4,5,6,7,8,9,10};
+
+int main()
+{
+    srand (time(NULL));
+
+    HERE:
+    cout<<"Press space bar to pick a card..."<<endl;
+
+    char ans;
+    while(getchar() != 32 || getchar()!= ' ')
+    {
+        int val = rand() % 13 ;
+        int val2 = rand() % 4;
+        if(val==0)
+        {
+            cout<<"The card is the "<<rank_nonNumber[0]<<" "<<suit[val2]<<endl;
+        }
+        else if(val==10)
+        {
+            cout<<"The card is the "<<rank_nonNumber[1]<<" "<<suit[val2]<<endl;
+        }
+        else if(val==11)
+        {
+            cout<<"The card is the "<<rank_nonNumber[2]<<" "<<suit[val2]<<endl;
+        }
+        else if(val==12)
+        {
+            cout<<"The card is the "<<rank_nonNumber[3]<<" "<<suit[val2]<<endl;
+        }
+        else{
+            cout<<"The card is the "<<rank_number[val-1]<<" "<<suit[val2]<<endl;
+        }
+
+
+
+    }
+
+
+}

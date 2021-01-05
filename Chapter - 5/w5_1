@@ -1,0 +1,17 @@
+/*(Find the character of an ASCII code) Write a program 
+that receives an ASCII code (an integer between 0 and 127)
+and displays its corresponding character.*/
+
+#include <iostream>
+
+using namespace std;
+
+int in;
+
+int main()
+{
+    cout << "Enter an ASCII code: ";
+    cin>>in;
+    cout<<"The character is "<<char(in);
+    return 0;
+}

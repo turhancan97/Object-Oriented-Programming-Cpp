@@ -1,0 +1,12 @@
+/*Approximate pi value*/
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+
+cout<<"sqrt(6 * (1 + 1/4 + 1/9 + 1/16 + 1/25)) = "<<(float) pow((6.0 * ((1.0) + (1.0/4) + (1.0/9) + (1.0/16) + (1.0/25))),0.5)<<"\n";
+cout<<"sqrt(6 * (1 + 1/4 + 1/9 + 1/16 + 1/25 + 1/36)) = "<<(float) sqrt(6.0 * ((1.0) + (1.0/4) + (1.0/9) + (1.0/16) + (1.0/25) + (1.0/36)) );
+}

@@ -1,0 +1,47 @@
+/*(Use the && and || operators) Write a program that 
+prompts the user to enter an integer and determines 
+whether it is divisible by 5 and 6, whether it is divisible 
+by 5 or 6, and whether it is divisible by 5 or 6, but not 
+both.*/
+
+#include <iostream>
+#include <ctime>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+int input;
+string stat1;
+string stat2;
+string stat3;
+
+int main()
+{
+    cout<<"Enter integer to see if it is divisible by 5 or 6: "<<endl;
+
+    cin>>input;
+
+    if ( (input%5==0) && input%6==0 )
+    {
+        stat1 = "true";
+    }
+    else{stat1 = "false";}
+
+    if ( (input%5==0) || input%6==0 )
+    {
+        stat2 = "true";
+    }
+    else{stat2 = "false";}
+
+    if ( ( ((input%5==0) || input%6==0) && ((input%5==0) && (input%6==0) ) ) == 1 )
+    {
+        stat3 = "flase";
+    }
+    else{stat3 = "true";}
+
+
+        cout<<"Is "<<input<<" divisible by both 5 and 6                     : "<<stat1<<endl;
+        cout<<"Is "<<input<<" divisible either 5 or 6                       : "<<stat2<<endl;
+        cout<<"Is "<<input<<" divisible either 5 or 6 but not both          : "<<stat3<<endl;
+
+}

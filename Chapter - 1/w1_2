@@ -1,0 +1,16 @@
+/*Display a pattern)*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+int j= 0;
+int k;
+int main()
+{
+    cout<<"    *"<<"\t\t"    <<" *********\n";
+    cout<<"   ***"<<"\t\t"   <<"  *******\n";
+    cout<<"  *****"<<"\t\t"  <<"   *****\n";
+    cout<<" *******"<<"\t" <<"    ***\n";
+    cout<<"*********"<<"\t"<<"     *\n";
+    
+}

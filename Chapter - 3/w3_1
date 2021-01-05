@@ -1,0 +1,25 @@
+/*(Check numbers) Write a program that prompts the user to 
+enter two integers and checks whether the first
+number is divisible by the second.*/
+
+#include <iostream>
+#include <ctime>
+#include <math.h>
+
+using namespace std;
+
+int first,second;
+int main()
+{
+    cout<<"Enter two integers: ";
+    cin>>first>>second;
+
+    if( (first%second) == 0)
+    {
+        cout<<first<<" is divisible by "<<second<<endl;
+    }
+    else
+    {
+        cout<<first<<" is not divisible by "<<second<<endl;
+    }
+}

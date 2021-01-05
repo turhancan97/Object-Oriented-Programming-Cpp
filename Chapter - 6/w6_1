@@ -1,0 +1,64 @@
+/*(Armstrong integer) Write the functions with the following headers:
+	// Return the sum of the cubes of the digits in an integer,
+	// i.e., cubeOfDigits(131) returns 1^3 + 3^3 + 1^3 = 29
+	int cubeOfDigits(int number)
+	// Displays if integer is an Armstrong integer
+	void isArmstrong(int sum, int number)
+Use cubeOfDigits to implement isArmstrong. An integer is an Armstrong integer if
+the sum of the cubes of its digits is equal to the number itself. Write a test program
+that prompts the user to enter an integer and reports whether it is an Armstrong
+integer or not.*/
+
+#include <iostream>
+using namespace std;
+int numberr;
+
+void isArmstrong(int sum, int number)
+{
+    if(sum==number)
+    {
+        cout<<number<<" is a Armstrong number";
+    }
+    else
+    {
+        cout<<number<<" is not a Armstrong number";
+    }
+}
+
+int cubeOfDigits(int n)
+{
+    int count=0;
+    int num;
+    num = n;
+    while (n != 0)
+    {
+
+        n = n/10;
+        count++;
+    }
+    int digits[count];
+    count = 0;
+    int summ=0;
+     while (num != 0)
+    {
+
+        summ = summ + (num%10)*(num % 10)*(num % 10);
+        count++;
+        num = num/10;
+    }
+
+    return summ;
+}
+
+int main()
+{
+    cout << "Enter an integer to test if it is an Armstrong Integer: ";
+    cin>>numberr;
+    int summation;
+    summation = cubeOfDigits(numberr);
+    isArmstrong(summation, numberr);
+
+
+
+    return 0;
+}

@@ -1,0 +1,61 @@
+/*(Count positive and negative numbers and compute the 
+average of numbers) Write a program that reads an unspecified
+number of integers, determine how many positive and negative 
+numbers have been read, and compute the total and average of 
+input values (not counting zero). Your program ends with 
+input 0. Display the average as a floating-point number with 
+three significant numbers.*/
+
+#include <iostream>
+#include <ctime>
+#include <math.h>
+#include <time.h>
+using namespace std;
+
+
+int input[1]={1};
+int index = 0;
+int vreg;
+int poscounter = 0;
+int negcounter = 0;
+int main()
+{
+    cout<<"Enter an integer, the input ends if it is a 0: ";
+    for(;;)
+    {
+         cin>>vreg;
+
+
+        if (vreg!=0)
+        {
+            input[index] = vreg;
+            index++;
+            if(vreg<0) {negcounter++;}
+            else if(vreg>0) {poscounter++;}
+        }
+        else
+        {
+            break;
+        }
+    }
+    int total = 0;
+    for (int i=0;i<index;i++)
+    {
+        total += input[i];
+    }
+    float meann;
+    meann = (float)total/(index);
+
+    cout<<"The total number of positive number is: "<<poscounter<<endl;
+
+    cout<<"The total number of negative number is: "<<negcounter<<endl;
+
+    cout<<"The sum of all number is: "<<total<<endl;
+
+    cout<<"The average of all number is: "<<meann<<endl;
+
+
+
+
+
+}

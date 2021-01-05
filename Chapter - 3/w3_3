@@ -1,0 +1,32 @@
+/*(Compute the area of an equilateral triangle) Write a 
+program that reads in three edges of a triangle and computes 
+the area if the input is valid. Otherwise, it displays that 
+the input is invalid. The input is valid if all the edges of 
+the triangle are equal.*/
+
+#include <iostream>
+#include <ctime>
+#include <math.h>
+
+using namespace std;
+
+float edge1,edge2,edge3,area;
+
+int main()
+{
+    HERE:
+    cout<<"Enter the edges of the triangular shaped: ";
+    cin>>edge1>>edge2>>edge3;
+
+    if( (edge1==edge2) && (edge1==edge3) )
+    {
+        area = edge1*edge1*pow(3,0.5)/4;
+        cout<<"Area of the triangle is: "<<area<<endl;
+    }
+    else{
+        cout<<"All edges must be equal, please try again. "<<endl;
+        goto HERE;
+    }
+
+
+}

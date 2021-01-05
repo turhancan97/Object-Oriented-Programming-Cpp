@@ -1,0 +1,18 @@
+/*(Display the current time) Write a program that displays current time in GMT in the
+format hour:minute:second, such as 1:45:19.*/
+
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+int main()
+{
+    // declaring argument of time()
+    time_t my_time = time(0);
+    cout<<"The elapsed seconds since Unix Epochs: "<<my_time<<"\n";
+    // ctime() used to give the present time
+
+    string date = ctime(&my_time);
+    cout<<"Time is: "<<date[11]<<date[12]<<date[13]<<date[14]<<date[15]<<date[16]<<date[17]<<date[18];
+    return 0;
+}
